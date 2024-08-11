@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KidSpark - Learning is Fun</title>
+    <link rel="icon" href="./assets/images/kidspark icon.ico" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="contentContainer">
+
+    <div class="container-fluid h-100 d-flex flex-column justify-content-center align-items-center">
+        <div class="row w-100">
+            <!-- Logo Section -->
+            <div class="col-md-6 d-flex flex-column align-items-center justify-content-center bg-dark text-white">
+                <img src="./assets/images/Kidspark alpha logo.png" alt="KidSpark Logo" class="mb-4 logo">
+            </div>
+            <!-- Content Sections -->
+            <div class="col-md-6 d-flex justify-content-center align-items-center">
+                <div class="grid-container">
+                    <div class="grid-item short-stories" onclick="showPopup(this)">
+                        <mwc-ripple></mwc-ripple>
+
+                        <p>Short Stories</p>
+                        
+                    </div>
+                    
+                    <div class="grid-item virtual-reality" onclick="showPopup(this)">
+                        <p>Virtual Reality</p>
+                        
+                    </div>
+                    <div class="grid-item coloring-books" onclick="showPopup(this)">
+                        <p>Coloring Books</p>
+                        
+                    </div>
+                    <div class="grid-item cutout-activities" onclick="showPopup(this)">
+                        <p>Cut-out Activities</p>
+                       
+                    </div>
+                    <div class="grid-item brain-games" onclick="showPopup(this)">
+                        <p>Brain Games</p>
+                       
+                    </div>
+                    <div class="grid-item more-coming-soon" onclick="showPopup(this)">
+                        <p>More coming soon!!!</p>
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    </div>
+    <!-- Popups -->
+    <div id="popup" class="popup">
+        <div id="popupContent" class="popup-content">
+            <!-- Content will be dynamically added here -->
+        </div>
+    </div>
+
+    <audio id="clickSound" src="./assets/click-sound.mp3" preload="auto"></audio>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="module" src="https://esm.run/@material/web/all.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
